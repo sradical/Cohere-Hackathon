@@ -82,10 +82,10 @@ def Semantic_Search(query_text):
     
     translator = Translator()
     result = translator.translate(output, src='en', dest='uk')
-    question = translator.translate(query_text, src='uk', dest='en')
+    #question = translator.translate(query_text, src='uk', dest='en')
     
-    st.write(question.origin)
+    #st.write(question.origin)
     st.write(result.text)
     
-    st.write(question.text)
+    #st.write(question.text)
     st.write(result.origin)
