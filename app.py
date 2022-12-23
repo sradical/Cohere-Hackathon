@@ -33,7 +33,7 @@ def main():
         submit_button = st.form_submit_button("Submit (Надіслати)")
 
     app = CohereApp()
-    if query_text or submit_button:
+    if submit_button:
         app.add_app("Search", Semantic_Search(query_text))
         app.run()
         
